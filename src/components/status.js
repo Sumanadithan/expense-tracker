@@ -1,31 +1,59 @@
 import React from 'react';
-import {Grid,Container} from 'semantic-ui-react';
+import {Grid, Segment} from 'semantic-ui-react';
 
-const Status = ({ income, expense }) => {
-    return (
-        <Container>
-        <Grid column={2} divided>
+const Status = ({income, expense}) => {
+  return (<div className='status'>
+    <Segment className='segment'>
+      <Grid>
         <Grid.Row>
-                <Grid.Column width={2}>
-                    <span>
-                        <h3 >Income</h3>
-                        <div >${income}</div>
-                    </span>
-                </Grid.Column>
-                <Grid.Column width={2}>
-                    <h3>Expense</h3>
-                    <div className='expense-text'>${expense}</div>
-                </Grid.Column>
-                </Grid.Row>
-                <Grid.Row>
-                <h2>Your Balance</h2>
-                </Grid.Row>
-                <Grid.Row>
-                <div class='column'>${income - expense}</div>
-                </Grid.Row>
-                </Grid>
-        </Container>
-    )
+          <Grid.Column >
+            <Segment className='income' color='green' style={{
+                borderColor: 'green',
+                textAlign: 'center'
+              }}>
+              <Grid.Row>
+                <h3>Income</h3>
+              </Grid.Row>
+              <Grid.Row style={{
+                  paddingTop: '4px'
+                }}>
+                <h4>₹{income}</h4>
+              </Grid.Row>
+            </Segment>
+
+          </Grid.Column>
+          <Grid.Column>
+            <Segment className='expense' color='red' style={{
+                borderColor: 'red',
+                textAlign: 'center'
+              }}>
+              <Grid.Row>
+                <h3>Expense</h3>
+              </Grid.Row>
+              <Grid.Row style={{
+                  paddingTop: '4px'
+                }}>
+                <h4>₹{expense}</h4>
+              </Grid.Row>
+            </Segment>
+          </Grid.Column>
+        </Grid.Row>
+        <Segment className='balance' color='orange' style={{
+            borderColor: 'orange',
+            textAlign: 'center'
+          }}>
+          <Grid.Row>
+            <h2>Your Balance</h2>
+          </Grid.Row>
+          <Grid.Row style={{
+              paddingTop: '4px'
+            }}>
+            <h4>₹{income - expense}</h4>
+          </Grid.Row>
+        </Segment>
+      </Grid>
+    </Segment>
+  </div>)
 }
 
 export default Status;

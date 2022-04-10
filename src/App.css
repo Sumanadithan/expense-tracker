@@ -1,116 +1,369 @@
-:root {
-    --box-shadow: 0px 1px 4px 1px rgba(199,199,199,1);
-    --income: green;
-    --expense: red;
+@media (min-width:1281px) {
+  .status {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+  }
+
+  .segment {
+    width: 500px;
+  }
+
+  .ui.segment.income {
+    width: 240px;
+    height: 90px;
+    margin-top: -9px;
+    margin-left: -9px;
+  }
+
+  .ui.segment.expense {
+    width: 240px;
+    height: 90px;
+    margin-top: -9px;
+    margin-left: 206px;
+  }
+
+  .ui.segment.balance {
+    width: 485px;
+    height: 100px;
+    margin-top: -8px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  .transaction-history {
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    margin-top: -210px;
+  }
+
+  .table {
+    width: 455px;
+    height: 100px;
+  }
+
+  .table-seg {
+    width: 470px;
+  }
+
+  .transaction-form {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    margin-top: -290px;
+  }
+
+  .li-seg {
+    width: 400px;
+  }
 }
 
-body {
-    font-family: 'Roboto Mono', monospace;
-    letter-spacing: -1px;
+@media (min-width:1063px) and (max-width:1280px) {
+  .status {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+  }
+
+  .segment {
+    width: 500px;
+  }
+
+  .ui.segment.income {
+    width: 240px;
+    height: 90px;
+    margin-top: -9px;
+    margin-left: -9px;
+  }
+
+  .ui.segment.expense {
+    width: 240px;
+    height: 90px;
+    margin-top: -9px;
+    margin-left: 206px;
+  }
+
+  .ui.segment.balance {
+    width: 485px;
+    height: 100px;
+    margin-top: -8px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  .transaction-history {
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    margin-top: -210px;
+  }
+
+  .table {
+    width: 455px;
+    height: 100px;
+  }
+
+  .transaction-form {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    margin-top: -290px;
+  }
+
+  .li-seg {
+    width: 400px;
+  }
+
+  .table-seg {
+    width: 470px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1064px) {
+  .status {
     display: flex;
     justify-content: center;
-    justify-items: center;
-}
+  }
 
-.balance-val {
-    font-size: 30px;
-    color: orange;
-}
+  .segment {
+    width: 500px;
+  }
 
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-.col {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.col h3 {
-    margin: 0;
-    padding: 0;
-}
-
-.row-expense {
-    box-shadow: var(--box-shadow);
-    margin-top: 20px;
+  .ui.segment.income {
     width: 240px;
-}
+    height: 90px;
+    margin-top: -9px;
+    margin-left: -9px;
+  }
 
-.col-income, .col-expense {
-    padding: 20px;
-}
+  .ui.segment.expense {
+    width: 240px;
+    height: 90px;
+    margin-top: -9px;
+    margin-left: 206px;
+  }
 
-.col-expense {
-    padding-left: 10px;
-}
-
-.col-income span {
-    display: inline-block;
-    border-right: 1px solid #ccc;
-    padding-right: 30px;
-}
-
-.income-text {
-    color: var(--income);
-}
-
-.expense-text {
-    color: var(--expense);
-}
-
-.transactions, .transactions li {
-    padding: 0;
-    margin: 0;
-}
-
-.transactions li {
-    display: flex;
-    justify-content: space-between;
-    box-shadow: var(--box-shadow);
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-.transactions li div {
-    margin-right: 10px;
-}
-
-.transactions li span {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.transaction-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.transaction-form input {
-    width: 97%;
-    height: 25px;
-}
-
-.transaction-form label {
-    margin-bottom: 10px;
-}
-
-.transaction-form button {
-    height: 30px;
+  .ui.segment.balance {
+    width: 485px;
+    height: 100px;
+    margin-top: -8px;
     margin-bottom: 5px;
-    border: none;
-    text-transform: uppercase;
-    font-size: 15px;
-    color: white;
-    width: 100%;
+    margin-left: 5px;
+  }
+
+  .transaction-history {
+    display: flex;
+    justify-content: center;
+    flex-direction: inherit;
+    padding-top: 10px;
+  }
+
+  .table {
+    width: 455px;
+    height: 100px;
+  }
+
+  .transaction-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: inherit;
+    padding-top: 10px;
+  }
+
+  .li-seg {
+    width: 400px;
+  }
+
+  .table-seg {
+    width: 470px;
+  }
 }
 
-.income-btn {
-    background-color: var(--income);
+@media (min-width:498px) and (max-width:767px) {
+  .status {
+    display: flex;
+    justify-content: center;
+  }
+
+  .segment {
+    width: 500px;
+  }
+
+  .ui.segment.income {
+    width: 240px;
+    height: 90px;
+    margin-top: -9px;
+    margin-left: -9px;
+  }
+
+  .ui.segment.expense {
+    width: 240px;
+    height: 90px;
+    margin-top: -9px;
+    margin-left: 206px;
+  }
+
+  .ui.segment.balance {
+    width: 485px;
+    height: 100px;
+    margin-top: -8px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  .transaction-history {
+    display: flex;
+    justify-content: center;
+    flex-direction: inherit;
+    padding-top: 10px;
+  }
+
+  .table {
+    width: 455px;
+    height: 100px;
+  }
+
+  .transaction-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: inherit;
+    padding-top: 10px;
+  }
+
+  .li-seg {
+    width: 400px;
+  }
+
+  .table-seg {
+    width: 470px;
+  }
 }
 
-.expense-btn {
-    background-color: var(--expense);
+@media (min-width: 402px) and (max-width: 497px) {
+  .status {
+    display: flex;
+    justify-content: center;
+  }
+
+  .segment {
+    width: 400px;
+  }
+
+  .ui.segment.income {
+    width: 190px;
+    height: 90px;
+    margin-left: -9px;
+    margin-top: -9px;
+  }
+
+  .ui.segment.expense {
+    width: 190px;
+    height: 90px;
+    margin-left: 160px;
+    margin-top: -9px;
+  }
+
+  .ui.segment.balance {
+    width: 390px;
+    height: 100px;
+    margin-top: -8px;
+    margin-bottom: 5px;
+    margin-left: 4px;
+  }
+
+  .transaction-history {
+    display: flex;
+    justify-content: center;
+    flex-direction: inherit;
+    padding-top: 10px;
+  }
+
+  .table {
+    width: 455px;
+    height: 100px;
+  }
+
+  .transaction-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: inherit;
+    padding-top: 10px;
+  }
+
+  .expense-tracker {
+    width: 500px;
+  }
+
+  .li-seg {
+    width: 310px;
+  }
+
+  .table-seg {
+    width: 370px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 402px) {
+  .status {
+    display: flex;
+    justify-content: center;
+  }
+
+  .segment {
+    width: 400px;
+  }
+
+  .ui.segment.income {
+    width: 190px;
+    height: 90px;
+    margin-left: -9px;
+    margin-top: -9px;
+  }
+
+  .ui.segment.expense {
+    width: 190px;
+    height: 90px;
+    margin-left: 160px;
+    margin-top: -9px;
+  }
+
+  .ui.segment.balance {
+    width: 390px;
+    height: 100px;
+    margin-top: -8px;
+    margin-bottom: 5px;
+    margin-left: 4px;
+  }
+
+  .transaction-history {
+    display: flex;
+    justify-content: center;
+    flex-direction: inherit;
+    padding-top: 10px;
+  }
+
+  .table {
+    width: 455px;
+    height: 100px;
+  }
+
+  .transaction-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: inherit;
+    padding-top: 10px;
+  }
+
+  .expense-tracker {
+    width: 400px;
+  }
+
+  .li-seg {
+    width: 310px;
+  }
+
+  .table-seg {
+    width: 370px;
+  }
 }
