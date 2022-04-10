@@ -1,4 +1,4 @@
-#Live Demo
+Live Demo:
 
 [exd-expense-tracker](https://exd-expense-tracker.netlify.app/)
 
